@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import image from '../images/wallpaper.jpg';
-import style from './Home.module.scss';
+import style from './Continents.module.scss';
 import { getContinents } from '../redux/Continents';
 import numberWithCommas from '../functions/numberWithCommas';
 import sumFieldOfArray from '../functions/sumFieldOfArray';
 
-function Home() {
+function Continents() {
   const continents = useSelector((state) => state.continentsReducer.continents);
 
   const dispatch = useDispatch();
@@ -66,4 +66,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Continents;

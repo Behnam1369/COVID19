@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import Home from './components/Home';
+import Continents from './components/Continents';
 import './App.scss';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Header />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Continents />} />
         </Routes>
       </BrowserRouter>
     </div>
