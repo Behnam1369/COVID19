@@ -30,7 +30,6 @@ $moreblue : #4369b2;
     justify-content: center;
     align-items: center;
 
-
     .card {
       height: 100%;
       display: flex;
@@ -40,7 +39,6 @@ $moreblue : #4369b2;
       background-color: $pink;
       gap: 0;
       justify-content: space-around;
-
 
       img {
         width: 22vw;
@@ -78,7 +76,6 @@ $moreblue : #4369b2;
       }
     }
   }
-
 
   a:nth-child(4n+3) .card {
     background-color: $morepink;
