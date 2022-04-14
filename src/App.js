@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Continents from './components/Continents';
 import './App.scss';
 import Countries from './components/Countries';
+import Country from './components/Country';
 
 function App() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Continents />} />
           <Route path="/Countries/:continent" element={<Countries />} />
+          <Route path="/Country/:country" element={<Country />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import style from './Countries.module.scss';
 import { getCountries } from '../redux/Countries';
 import numberWithCommas from '../functions/numberWithCommas';
@@ -30,10 +30,6 @@ function Countries() {
 
   return (
     <main>
-      <div className={style.wallpaper}>
-        {/* <img src='' alt="Main page background" /> */}
-        <div className={style.overlay} />
-      </div>
       <div className={style.cardContainer}>
         <div
           key={continent}
@@ -55,16 +51,18 @@ function Countries() {
           </div>
         </div>
         {countries.map((el) => (
-          <div key={el.name} className={style.card}>
-            <div className={style.img} style={{ backgroundImage: `url('${el.flag}')` }} />
-            <div className={style.info}>
-              <h3>{el.name}</h3>
-              <h4>NEW CASES</h4>
-              <h4>{numberWithCommas(el.todayCases)}</h4>
-              <h4>NEW DEATHS</h4>
-              <h4>{numberWithCommas(el.todayDeaths)}</h4>
+          <NavLink key={el.name} to={`/country/${el.name}`}>
+            <div className={style.card}>
+              <div className={style.img} style={{ backgroundImage: `url('${el.flag}')` }} />
+              <div className={style.info}>
+                <h3>{el.name}</h3>
+                <h4>NEW CASES</h4>
+                <h4>{numberWithCommas(el.todayCases)}</h4>
+                <h4>NEW DEATHS</h4>
+                <h4>{numberWithCommas(el.todayDeaths)}</h4>
+              </div>
             </div>
-          </div>
+          </NavLink>
         ))}
       </div>
     </main>
