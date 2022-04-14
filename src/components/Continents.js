@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import image from '../images/wallpaper.jpg';
 import style from './Continents.module.scss';
 import { getContinents } from '../redux/Continents';
@@ -30,36 +31,39 @@ function Continents() {
         <div className={style.overlay} />
       </div>
       <div className={style.cardContainer}>
-        <div
+        <NavLink
           key="world"
-          className={style.card}
-          style={{
-            gridColumn: '1/3',
-            flexDirection: 'row',
-            paddingRight: '15vw',
-            paddingLeft: '15vw',
-          }}
+          to="./Countries/world"
+          style={{ gridColumn: '1/3', flexDirection: 'row' }}
         >
-          <img src="../images/world.png" alt="world" style={{ width: '50%' }} />
-          <div className={style.info}>
-            <h3>World</h3>
-            <h4>NEW CASES</h4>
-            <h4>{numberWithCommas(sumFieldOfArray(continents, 'todayCases'))}</h4>
-            <h4>NEW DEATHS</h4>
-            <h4>{numberWithCommas(sumFieldOfArray(continents, 'todayDeaths'))}</h4>
-          </div>
-        </div>
-        {continents.map((el) => (
-          <div key={el.name} className={style.card}>
-            <img src={`../images/${el.name}.png`} alt={el.name} />
+          <div
+            key="world"
+            className={style.card}
+            style={{ paddingRight: '15vw', paddingLeft: '15vw' }}
+          >
+            <img src="../images/world.png" alt="world" style={{ width: '50%' }} />
             <div className={style.info}>
-              <h3>{el.name}</h3>
+              <h3>World</h3>
               <h4>NEW CASES</h4>
-              <h4>{numberWithCommas(el.todayCases)}</h4>
+              <h4>{numberWithCommas(sumFieldOfArray(continents, 'todayCases'))}</h4>
               <h4>NEW DEATHS</h4>
-              <h4>{numberWithCommas(el.todayDeaths)}</h4>
+              <h4>{numberWithCommas(sumFieldOfArray(continents, 'todayDeaths'))}</h4>
             </div>
           </div>
+        </NavLink>
+        {continents.map((el) => (
+          <NavLink key={el.name} to={`./Countries/${el.name}`}>
+            <div className={style.card}>
+              <img src={`../images/${el.name}.png`} alt={el.name} />
+              <div className={style.info}>
+                <h3>{el.name}</h3>
+                <h4>NEW CASES</h4>
+                <h4>{numberWithCommas(el.todayCases)}</h4>
+                <h4>NEW DEATHS</h4>
+                <h4>{numberWithCommas(el.todayDeaths)}</h4>
+              </div>
+            </div>
+          </NavLink>
         ))}
       </div>
     </main>
