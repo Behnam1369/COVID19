@@ -13,7 +13,6 @@ $moreblue : #4369b2;
     flex-direction: row;
     position: relative;
     background-color: $pink;
-    align-items: center;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -23,8 +22,6 @@ $moreblue : #4369b2;
       font-family: 'Gill Sans', sans-serif;
       font-size: 4vw;
       font-weight: bold;
-      margin: 0;
-      text-align: right;
       margin: 15px;
       text-align: center;
       color: white;
@@ -33,7 +30,6 @@ $moreblue : #4369b2;
     p {
       font-family: 'Gill Sans', sans-serif;
       font-size: 3vw;
-      font-weight: bold;
       margin: 0;
       text-align: right;
       margin-bottom: 10px;
@@ -55,13 +51,11 @@ $moreblue : #4369b2;
     h4:nth-child(3) {
       margin-bottom: 2vw;
     }
-
   }
 
   .card:nth-child(1) {
     align-items: center;
   }
-
 
   .card:nth-child(4n+3) {
     background-color: $morepink;
