@@ -8,7 +8,6 @@ import configureStore from '../redux/configureStore';
 import App from '../App';
 import { getContinents } from '../redux/Continents';
 
-
 describe('Integration test', () => {
   it('Asia should be in continents list', () => {
     const param = [
