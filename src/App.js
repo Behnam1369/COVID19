@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Continents from './components/Continents';
@@ -7,14 +7,10 @@ import Countries from './components/Countries';
 import Country from './components/Country';
 
 function App() {
-  useEffect(() => {
-    document.getElementById('favicon').href = '/images/coronavirus.png';
-  }, []);
-
   return (
     <div className="App">
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Continents />} />
           <Route path="/Countries/:continent" element={<Countries />} />
