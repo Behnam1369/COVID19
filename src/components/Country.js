@@ -19,9 +19,10 @@ function Countries() {
     totalCases: 1,
     totalDeaths: 1,
   });
-  const [flag] = useState(() => defaultState.countries.filter((el) => el.name === country)[0].flag);
+  const [flag, setFlag] = useState('');
 
   useEffect(() => {
+    setFlag(defaultState.countries.filter((el) => el.name === country)[0].flag);
     fetch(`https://corona.lmao.ninja/v2/countries/${country}`)
       .then((response1) => response1.json())
       .then((result1) => {
@@ -42,7 +43,7 @@ function Countries() {
           })
           .catch((error) => `Error: ${error}`);
       }).catch((error) => `Error: ${error}`);
-  }, []);
+  }, [country]);
 
   return (
     <main>

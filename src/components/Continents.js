@@ -28,7 +28,11 @@ function Continents() {
     <main>
       <div className={style.wallpaper}>
         <img src={image} alt="Main page background" />
-        <div className={style.overlay} />
+        <div className={style.overlay}>
+          <h1>
+            Coronavirus live statictics
+          </h1>
+        </div>
       </div>
       <div className={style.cardContainer}>
         <NavLink

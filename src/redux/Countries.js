@@ -1,6 +1,6 @@
 import defaultState from './CountriesDefaultState';
 
-export const GETCOUNTRIES = 'covid19/home/GET CONTRIES';
+export const GETCOUNTRIES = 'covid19/home/GET COUNTRIES';
 
 export default function countriesReducer(state = defaultState, action) {
   switch (action.type) {

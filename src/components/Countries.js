@@ -41,7 +41,7 @@ function Countries() {
             paddingLeft: '15vw',
           }}
         >
-          <img src={`../images/${continent}.png`} alt="world" style={{ width: '50%' }} />
+          <img src={`../images/${continent}.png`} alt={continent} style={{ width: '50%' }} />
           <div className={style.info}>
             <h3>{continent}</h3>
             <h4>NEW CASES</h4>
