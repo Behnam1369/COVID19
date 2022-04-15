@@ -25,6 +25,21 @@ Please find the requirements for this project [here](https://github.com/microver
 You can find the live demo on [Netlify](https://effortless-travesseiro-5acbee.netlify.app/). 
 
 
+## Getting Started
+
+To get a local copy follow these simple example steps.  
+
+1. Open the terminal window and clone the repository using this command:  
+`git clone https://github.com/Behnam1369/COVID19.git` 
+2. Change the directory to the react-bookstore directory:  
+`cd COVID19`  
+3. Install the project's dependencies by running this command:   
+`npm install`   
+4. Run the application using:  
+`npm start`  
+5. For runnig the application tests excute below command:   
+`npm run test` 
+
 ## Authors
 
 👤 **Behnam Aghaali**
@@ -34,7 +49,6 @@ You can find the live demo on [Netlify](https://effortless-travesseiro-5acbee.ne
 - Twitter: [https://twitter.com/behnamagh1369](https://twitter.com/behnamagh1369)
 - Email: [behnam.aghaali@yahoo.com](mailto:behnam.aghaali@yahoo.com)
 
-Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 ## 🤝 Contributing
 
@@ -48,9 +62,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 ## 📝 License
 
