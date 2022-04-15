@@ -34,6 +34,8 @@ You can find the live demo on [Netlify](https://effortless-travesseiro-5acbee.ne
 - Twitter: [https://twitter.com/behnamagh1369](https://twitter.com/behnamagh1369)
 - Email: [behnam.aghaali@yahoo.com](mailto:behnam.aghaali@yahoo.com)
 
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
