@@ -35,9 +35,9 @@ To get a local copy follow these simple example steps.
 `cd COVID19`  
 3. Install the project's dependencies by running this command:   
 `npm install`   
-4. Run the application using:
+4. Run the application using:  
 `npm start`  
-5. For runnig the application tests excute below command: 
+5. For runnig the application tests excute below command:   
 `npm run test` 
 
 ## Authors
