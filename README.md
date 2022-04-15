@@ -31,14 +31,14 @@ To get a local copy follow these simple example steps.
 
 1. Open the terminal window and clone the repository using this command:  
 `git clone https://github.com/Behnam1369/COVID19.git` 
-2. Change the directory to the react-bookstore directory  
+2. Change the directory to the react-bookstore directory:  
 `cd COVID19`  
 3. Install the project's dependencies by running this command:   
 `npm install`   
 4. Run the application using:
- `npm start`  
+`npm start`  
 5. For runnig the application tests excute below command: 
- `npm run test` 
+`npm run test` 
 
 ## Authors
 
